@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/v1/kafka")
 public class MessageController {
 
-    @Autowired
     private KafkaProducer kafkaProducer;
 
     public MessageController(KafkaProducer kafkaProducer) {

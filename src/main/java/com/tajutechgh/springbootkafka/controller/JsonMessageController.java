@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/kafka/json")
 public class JsonMessageController {
 
-    @Autowired
     private JsonKafkaProducer jsonKafkaProducer;
 
     public JsonMessageController(JsonKafkaProducer jsonKafkaProducer) {
